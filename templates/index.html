@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Thailand-Reise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Mein Thailand-Urlaub – eine persönliche Reisewebseite</h1>
+
+    <div class="ort1">
+        <h2>📍 Bangkok</h2>
+        <img src="{{ url_for('static', filename='images/Bangkok_img.jpg') }}" alt="Bangkok" width="300">
+        <p>Tempel, Streetfood und verrückter Verkehr – Bangkok war überwältigend!</p>
+        <button onclick="zeigeInfo('Bangkok')">Mehr erfahren</button>
+    </div>
+
+    <div class="ort2">
+        <h2>📍 Hua Hin</h2>
+        <img src="{{ url_for('static', filename='images/HuaHin_img.jpg') }}" alt="Hua Hin" width="300">
+        <p>Ein entspannter Ort am Meer mit einem schönen Nachtmarkt und Strand.</p>
+        <button onclick="zeigeInfo('Hua Hin')">Mehr erfahren</button>
+    </div>
+
+    <div class="ort3">
+        <h2>📍 Isaan(Seka)</h2>
+        <img src="{{ url_for('static', filename='images/Seka_img.jpg') }}" alt="Seka" width="300">
+        <p>Ein kleiner Ort im Nordosten – ruhiges Landleben und schöne Natur.</p>
+        <button onclick="zeigeInfo('Seka')">Mehr erfahren</button>
+    </div>
+
+    <div class="ort4">
+        <h2>📍 Pattaya</h2>
+        <img src="{{ url_for('static', filename='images/Pattaya_img.jpg') }}" alt="Pattaya" width="300">
+        <p>Strandstadt mit Nachtleben, aber auch schönen Aussichtspunkten.</p>
+        <button onclick="zeigeInfo('Pattaya')">Mehr erfahren</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
